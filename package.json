@@ -4,7 +4,11 @@
   "description": "",
   "main": " dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/vnvm5k/BvN/issues"
   },
-  "homepage": "https://github.com/vnvm5k/BvN#readme"
+  "homepage": "https://github.com/vnvm5k/BvN#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {}
 }
